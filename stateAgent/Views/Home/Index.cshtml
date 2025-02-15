@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* ---------------------------
+           BASIC RESET / BASE STYLES
+           --------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2E2E2E; /* Dark background */
+            color: #EAEAEA;            /* Lighter text on dark bg */
+        }
+
+        a {
+            color: #6DBFF5; /* Some light-blue link color */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --------------
+           MAIN CONTAINER
+           -------------- */
+        .dashboard-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* -------------
+           DASHBOARD CARD
+           ------------- */
+        .card {
+            background-color: #3C3C3C;
+            border-radius: 8px;
+            padding: 1rem;
+            flex: 1 1 300px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h2 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            color: #FFFFFF;
+        }
+
+        .card p, .card ul, .card li {
+            font-size: 0.9rem;
+            line-height: 1.3;
+        }
+
+        /* Example for "charts" or placeholders */
+        .chart-placeholder {
+            background-color: #2A2A2A;
+            border-radius: 4px;
+            height: 100px;
+            margin-top: 1rem;
+        }
+
+        /* ----------------------------
+           OPTIONAL: TEXT-CENTER SECTION
+           ---------------------------- */
+        .text-center {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .text-center h1 {
+            color: #FFFFFF;
+            margin-bottom: 1rem;
+        }
+        .text-center p {
+            font-size: 1rem;
+            color: #D0D0D0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero / Welcome Section -->
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>
+            Learn about 
+            <a href="https://learn.microsoft.com/aspnet/core">
+                building Web apps with ASP.NET Core
+            </a>.
+        </p>
+        <p>This is the Line added</p>
+    </div>
+
+    <!-- Dashboard-Style Layout -->
+    <div class="dashboard-container">
+        <!-- Card #1 -->
+        <div class="card">
+            <h2>Active Orders</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="chart-placeholder"></div>
+        </div>
+
+        <!-- Card #2 -->
+        <div class="card">
+            <h2>Latest Orders</h2>
+            <ul>
+                <li>Order #1234</li>
+                <li>Order #1235</li>
+                <li>Order #1236</li>
+            </ul>
+            <div class="chart-placeholder"></div>
+        </div>
+
+        <!-- Card #3 -->
+        <div class="card">
+            <h2>Inventory</h2>
+            <p>Stock: 37.24</p>
+            <p>Delivered: 38.28</p>
+            <div class="chart-placeholder"></div>
+        </div>
+
+        <!-- Card #4 -->
+        <div class="card">
+            <h2>Under Orders</h2>
+            <p>You can list details here.</p>
+            <div class="chart-placeholder"></div>
+        </div>
+
+        <!-- ... You can add more cards to mirror the sections in the sample image ... -->
+    </div>
+
+</body>
+</html>
