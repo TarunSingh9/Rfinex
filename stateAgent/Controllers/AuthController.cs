@@ -7,6 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using stateAgent.Models;
 using stateAgent.Data;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+
 
 namespace stateAgent.Controllers
 {
